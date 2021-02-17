@@ -8,7 +8,7 @@ export default class Walker {
   }
 
   display(ctx: CanvasRenderingContext2D) {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
     ctx.fillRect(this.x, this.y, 5, 5);
   }
 

@@ -1,3 +1,5 @@
+import { random } from "../util/random.js";
+
 export default class Walker {
   x: number;
   y: number;
@@ -13,8 +15,8 @@ export default class Walker {
   }
 
   step() {
-    const stepX = Math.random() * 2 - 1;
-    const stepY = Math.random() * 2 - 1;
+    const stepX = random(-1, 1);
+    const stepY = random(-1, 1);
 
     this.x += stepX * 5;
     this.y += stepY * 5;
